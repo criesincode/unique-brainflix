@@ -1,19 +1,27 @@
 import React from "react"
-import "./Sidebar.scss"
-import "../../data/video-details.json"
 
-const Sidebar = () => {
+import "./Sidebar.scss"
+
+
+
+const Sidebar = ({videos}) => {
     return (
-        <aside className="sidebar">
+        <section>
+        <h2 className="videosHeading">NEXT VIDEOS</h2>
+        
+        { videos.map(videos => { 
+            return ( <aside className="sidebar">
             <article className="videos">
-                <h2 className="videosHeading">NEXT VIDEOS</h2>
-                <div className="videosTitle">{video-details.title}</div>
-                <p className="videosChannel">{video-details.channel}</p>
-                <img className="videosImg" src={video-details.images} alt="video image"/>
+                <div className="videosTitle">{videos.title}</div>
+                <p className="videosChannel">{videos.channel}</p>
+                <img className="videosImg" src={videos.image} alt="video image"/>
             </article> 
        
-    </aside> 
-    )
+    </aside>) 
+       })
+    }
+       </section> 
+        )
 }
 
 export default Sidebar;

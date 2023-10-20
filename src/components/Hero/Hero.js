@@ -1,9 +1,9 @@
-const Hero = () => {
-    return (
-    <section class="hero">
-        <video></video>
-    </section>
-    )
-}
+// const Hero = () => {
+//     return (
+//     <section class="hero">
+//         <video></video>
+//     </section>
+//     )
+// }
 
-export default Hero;
+// export default Hero;
