@@ -1,24 +1,15 @@
+import "./Sidebar.scss"
+
 const Sidebar = () => {
     return (
         <aside class="sidebar">
-        {/* <p>NEXT VIDEOS</p>
-        <div class="sideobarVideo"> <video></video> A Travel Pro In One Easy Lesson
-            Todd Welch</div>
-        <div class="sidebarVideo"> <video></video> Les Houches The Hidden Gem Of The...
-            Cornelia Blair</div>
-        <div class="sidebarVideo"> <video></video> Travel Health Useful Medical Information...
-            Glen Harper
-            </div>
-        <div class="sidebarVideo"> <video></video> Cheap Airline Tickets Great Ways To Save
-            Emily Harper</div>
-        <div class="sidebarVideo"> <video></video> Take A Romantic Break In A Boutique...
-            Ethan Owen</div>
-        <div class="sidebarVideo"> <video></video> Choose The Perfect Accomodations
-            Lydia Perez</div>
-        <div class="sidebarVideo"> <video></video> Cruising Destination Ideas
-            Timothy Austin</div>
-        <div class="sidebarVideo"> <video></video> Train Travel On Track For Safety
-            Scotty Cramer</div> */}
+            <article className="videos">
+                <h2 className="videosHeading">NEXT VIDEOS</h2>
+                <div className="videosTitle">{video-details.title}</div>
+                <p className="videosChannel">{video-details.channel}</p>
+                <img className="videosImg" src={video-details.images}/>
+            </article> 
+       
     </aside> 
     )
 }
