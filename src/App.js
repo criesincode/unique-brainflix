@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      <Main />
       <Comments />
       <Sidebar />
     </div>

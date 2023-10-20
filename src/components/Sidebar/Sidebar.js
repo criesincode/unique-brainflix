@@ -1,7 +1,7 @@
 const Sidebar = () => {
     return (
-        <section class="sidebar">
-        <p>NEXT VIDEOS</p>
+        <aside class="sidebar">
+        {/* <p>NEXT VIDEOS</p>
         <div class="sideobarVideo"> <video></video> A Travel Pro In One Easy Lesson
             Todd Welch</div>
         <div class="sidebarVideo"> <video></video> Les Houches The Hidden Gem Of The...
@@ -18,8 +18,8 @@ const Sidebar = () => {
         <div class="sidebarVideo"> <video></video> Cruising Destination Ideas
             Timothy Austin</div>
         <div class="sidebarVideo"> <video></video> Train Travel On Track For Safety
-            Scotty Cramer</div>
-    </section> 
+            Scotty Cramer</div> */}
+    </aside> 
     )
 }
 
