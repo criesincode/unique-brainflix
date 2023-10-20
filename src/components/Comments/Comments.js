@@ -1,12 +1,20 @@
-import Comments "./"
+import "./Comments.scss"
 
-const Comments = () => {
+const Comments = ({comments}) => {
     return (
-        <section className="comments">
-        <div className="commentsContainer">
-            <p className="commentsDetail">{video-details.comment}</p>
-        </div> 
-        </section>   
+        <>
+        {comments.map(comment =>{
+            return (
+                <section className="comments">
+                <div className="commentsContainer">
+                    <p className="commentsName">{comment.name}</p>
+                    <p className="commentTimeStamp">{comment.timestamp}</p>
+                    <p className="commentsComment">{comment.comment}</p>
+                </div> 
+                </section>  
+            )
+        })}
+       </> 
     )
 }
 
