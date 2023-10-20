@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import Main from "./components/Main"
-import Comments from "./components/Comments"
-import Sidebar from "./components/Sidebar"
+import React from "react"
+import Header from "./components/Header/Header.js"
+import Hero from "./components/Hero/Hero.js"
+import Main from "./components/Main/Main.js"
+import Comments from "./components/Comments/Comments.js"
+import Sidebar from "./components/Sidebar/Sidebar.js"
 import './App.scss';
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
       <Hero />
       <Main />
       <Comments />
-      <Sidebar />
+      <Sidebar
+      video-details={video-details} />
     </div>
   );
 }
