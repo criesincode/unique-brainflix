@@ -1,4 +1,4 @@
-// import React from "react"
+import React from "react"
 import { useState } from "react"
 import Header from "./components/Header/Header.js"
 import Hero from "./components/Hero/Hero.js"
@@ -17,7 +17,7 @@ function App() {
       {/* <Header />
       <Hero /> */}
       <Main 
-        title={currentDetails.title}/>
+        currentDetails={currentDetails}/>
       {/* <Comments />
       <Sidebar /> */}
     </div>
