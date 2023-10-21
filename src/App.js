@@ -1,4 +1,4 @@
-
+import React from "react"
 import Header from "./components/Header/Header.js"
 import Hero from "./components/Hero/Hero.js"
 import Main from "./components/Main/Main.js"
@@ -9,11 +9,11 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
+      {/* <Header />
+      <Hero /> */}
       <Main />
-      <Comments />
-      <Sidebar />
+      {/* <Comments />
+      <Sidebar /> */}
     </div>
   );
 }
