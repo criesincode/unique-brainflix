@@ -26,7 +26,6 @@ const Main = ({ currentDetails }) => {
                             <img className="mainCommentImage" src="./assets/images/Mohan-muruge.jpg" alt="murage img"/>
                             <form id="mainCommentForm">
                                 <div className="mainCommentInput">
-                                <h5 className="mainCommentInputText">COMMENT</h5>
                                 <label className="comment" htmlFor="comment"></label>
                                 <input type="comment" name="comment" id="comment" placeholder="Add a new comment"/>
                                 <br />
