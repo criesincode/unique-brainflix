@@ -17,7 +17,11 @@ function App() {
       {/* <Header />
       <Hero />
       <Main /> */}
-      <Comments comments={currentVideo.comments} />
+      <Comments 
+      key={currentVideo.id}
+      name={currentVideo.comments}
+      timestamp={currentVideo.timestamp}
+      comments={currentVideo.comments} />
       {/* <Sidebar /> */}
     </div>
   );
