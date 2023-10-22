@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header className="navbar">
         <div className="navbarContainer">
-            <img className="navbarlogo" href="../unique-dismuke-brainflix/src/assets/logo/BrainFlix-logo.svg" alt="logo"/>
+            <img className="navbarlogo" src="../../assets/logo" alt="logo"/>
             <div className="navbarForm__Container">
                 <form className="navbarInput">
                     <input type="search" id="bflixSearch" name="bflixSearch"></input>

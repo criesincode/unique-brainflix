@@ -1,4 +1,4 @@
-
+import React from "react"
 import Header from "./components/Header/Header.js"
 import Hero from "./components/Hero/Hero.js"
 import Main from "./components/Main/Main.js"
@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
+      {/* <Hero />
       <Main />
       <Comments />
-      <Sidebar />
+      <Sidebar /> */}
     </div>
   );
 }
