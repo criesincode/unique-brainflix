@@ -1,6 +1,7 @@
 .comments {
     display: flex;
     justify-content: space-evenly;
+    border-bottom: #AFAFAF 1px solid;
 }
 .commentsAvi {
     background-color: #E1E1E1;
@@ -23,6 +24,4 @@
 }
 .commentsComment {
     margin-top: 0rem;
-    padding-bottom: .9375rem;
-    border-bottom: #AFAFAF 1px solid;
 }
