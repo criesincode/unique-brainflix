@@ -8,9 +8,9 @@ const Main = ({ currentDetails }) => {
                     <p className="main__Title">{currentDetails.title}</p>
                 </div>
                 <div className="main__DetailsContainer">
-                    <div className="main__DetailsSection">
+                    <div className="main__DetailsSectionA">
                         <p className="mainAuthor">By {currentDetails.channel}</p>
-                        <p className="mainDate">{currentDetails.date}</p>
+                        <p className="mainDate">{currentDetails.timestamp}</p>
                     </div>
                     <div className="main__DetailsSection">
                         <p className="mainViews">{currentDetails.views}</p>
@@ -21,10 +21,11 @@ const Main = ({ currentDetails }) => {
                         <p className="mainInfoB">3 Comments</p>
                     </div>
                     <div className="main__DetailsForm"> 
-                        <h2 className="mainFormText">Join the Conversation</h2>
+                    
                         <div className="mainCommentContainer">
-                            <img className="mainCommentImage" src="./assets/images/Mohan-muruge.jpg" alt="murage img"/>
+                        <img className="mainCommentImage" src="./assets/images/Mohan-muruge.jpg" alt="murage img"/>
                             <form id="mainCommentForm">
+                            <p className="mainFormText">JOIN THE CONVERSATION</p>
                                 <div className="mainCommentInput">
                                 <label className="comment" htmlFor="comment"></label>
                                 <input type="comment" name="comment" id="comment" placeholder="Add a new comment"/>
