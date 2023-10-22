@@ -6,9 +6,12 @@ const Comments = ({comments}) => {
         {comments.map(comment =>{
             return (
                 <section className="comments">
+                    <div className="commentsAvi"></div>
                 <div className="commentsContainer">
-                    <p className="commentsName">{comment.name}</p>
-                    <p className="commentTimeStamp">{comment.timestamp}</p>
+                    <div className="commentsSectionA">
+                        <p className="commentsName">{comment.name}</p>
+                        <p className="commentTimeStamp">{comment.timestamp}</p>
+                    </div>
                     <p className="commentsComment">{comment.comment}</p>
                 </div> 
                 </section>  
