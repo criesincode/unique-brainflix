@@ -5,6 +5,7 @@ import Main from "./components/Main/Main.js"
 import Comments from "./components/Comments/Comments.js"
 import Sidebar from "./components/Sidebar/Sidebar.js"
 import videos from "./data/videos.json"
+
 import './App.scss';
 
 function App() {
