@@ -3,15 +3,17 @@ import "./Header.scss"
 const Header = () => {
     return (
         <header className="navbar">
-        <div className="navbarContainer">
             <img className="navbarlogo" src="../../assets/logo" alt="logo"/>
+        <div className="navbarContainer">
             <div className="navbarForm__Container">
                 <form className="navbarInput">
-                    <input type="search" id="bflixSearch" name="bflixSearch"></input>
+                    <input type="search" id="bflixSearch" name="bflixSearch" placeholder="Search"></input>
+                    <button className="navbarButton">UPLOAD</button>
                 </form>
-                <img className="navbarAvi" src="../unique-dismuke-brainflix/src/assets/logo/BrainFlix-logo.svg"/>
+                
             </div>
-            <button className="navbarButton">UPLOAD</button>
+            <img className="navbarAvi" src="" alt="avi"/>
+            
         </div>
     </header>
     );
