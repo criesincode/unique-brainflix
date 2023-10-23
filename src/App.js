@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero videoDetails={videoDetails}/>
+      <Hero videoDetails={heroVideo}/>
       <Main />
       <Comments />
       <Sidebar /> 
