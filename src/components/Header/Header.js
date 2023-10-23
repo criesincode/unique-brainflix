@@ -1,6 +1,7 @@
 import "./Header.scss"
 import MohanMurugeImage from "../../assets/images/Mohan-muruge.jpg";
 import bflixLogo from "../../assets/logo/BrainFlix-logo.svg"
+import searchIcon from "../../assets/icons/search.svg"
 
 const Header = () => {
     return (
@@ -9,7 +10,7 @@ const Header = () => {
         <div className="navbarContainer">
             <div className="navbarForm__Container">
                 <form className="navbarInput">
-                    <input type="search" id="bflixSearch" name="bflixSearch" placeholder="Search"></input>
+                    <input type="search" id="bflixSearch" name="bflixSearch"  placeholder="Search"src={searchIcon} ></input>
                     <button className="navbarButton">UPLOAD</button>
                     <button className="navbarButtonB">UPLOAD</button>
                 </form>
