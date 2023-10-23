@@ -1,0 +1,26 @@
+.videosHeading {
+    font-size: .8125rem;
+    color: #AFAFAF;
+    font-weight: 700;
+}
+.videosContainer {
+    display: flex;
+}
+.videosTitle {
+    padding-left: 1rem;
+    padding-top: .625rem;
+    margin-top: 0rem;
+    font-size: .8125rem;
+    font-weight: 700;
+}
+.videosChannel {
+    padding-left: 1rem;
+    padding-top: .3125rem;
+    font-size: .8125rem;
+}
+.videosImg {
+    width: 6.25rem;
+    height: 4.6875rem;
+    padding-bottom: 1rem;
+    border-radius: .25rem;
+}
