@@ -10,12 +10,15 @@
     font-weight: 700;
 }
 .mainDate {
+    color: #AFAFAF;
     font-size: .8125rem;
 }
 .mainViews {
+    color: #AFAFAF;
     font-size: .8125rem;
 }
 .mainLikes {
+    color: #AFAFAF;
     font-size: .8125rem;
 }
 .mainInfoA {
@@ -38,6 +41,7 @@
 }
 .mainCommentContainer {
     display: flex;
+    border-bottom: #AFAFAF 1px solid;
 }
 #comment {
     width: 12.5rem;
@@ -47,8 +51,12 @@ button {
     width: 13rem;
     height: 2.5rem;
     margin-top: .9375rem;
+    margin-bottom: 1rem;
     background-color: #0095FF;
     color: #FFFFFF;
     font-size: .625rem;
     font-weight: 700;
 }
+button:hover {
+    background-color: #0065AD;
+  }

@@ -1,4 +1,6 @@
 import React from "react"
+import image from "../../assets/images/"
+import icons from "../../assets/icons"
 import "./Main.scss"
 
 const Main = ({ currentDetails }) => {
@@ -23,7 +25,7 @@ const Main = ({ currentDetails }) => {
                     <div className="main__DetailsForm"> 
                     
                         <div className="mainCommentContainer">
-                        <img className="mainCommentImage" src="./assets/images/Mohan-muruge.jpg" alt="murage img"/>
+                        <img className="mainCommentImage" src={Mohan-muruge.jpg} alt="murage img"/>
                             <form id="mainCommentForm">
                             <p className="mainFormText">JOIN THE CONVERSATION</p>
                                 <div className="mainCommentInput">
