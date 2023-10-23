@@ -1,7 +1,12 @@
-const Hero = () => {
+import React from "react";
+import "./Hero.scss"
+
+const Hero = ({ videoDetails }) => {
+  
     return (
-    <section class="hero">
-        <video></video>
+    <section className="hero">
+        <video className="heroVideo" poster={videoDetails.image}>
+        </video>
     </section>
     )
 }
