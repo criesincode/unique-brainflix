@@ -15,7 +15,7 @@
     margin-top: .625rem;
     margin-bottom: .625rem;
     @include tablet {
-        padding-left: 12.5rem;
+        padding-left: 1.5625rem;
     }
 }
 form {
@@ -53,6 +53,9 @@ form {
     display: none;
     @include tablet {
         display: flex;
+        margin-left: 1.25rem;
+        padding-top: .9375rem;
+        padding-left: 2.5rem;
     }
 
 }
@@ -61,10 +64,18 @@ form {
     height: 2.5rem;
     margin-bottom: .625rem;
     margin-left: 1.25rem;
+    @include tablet {
+        margin-top: .9375rem;
+        margin-left: 9.375rem;
+    }
 }
 .navbarAvi {
     width: 3.125rem;
     height: 3.125rem;
     border-radius: 1.5625rem;
     margin-left: -1.25rem;
+    @include tablet {
+        margin-left: 1.5625rem;
+        margin-top: .625rem;
+    }
 }
