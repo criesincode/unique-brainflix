@@ -1,0 +1,62 @@
+.main__TitleContainer {
+    border-bottom: #AFAFAF 1px solid;
+}
+.main__Title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.mainAuthor {
+    font-size: .8125rem;
+    font-weight: 700;
+}
+.mainDate {
+    color: #AFAFAF;
+    font-size: .8125rem;
+}
+.mainViews {
+    color: #AFAFAF;
+    font-size: .8125rem;
+}
+.mainLikes {
+    color: #AFAFAF;
+    font-size: .8125rem;
+}
+.mainInfoA {
+    font-size: .8125rem;
+}
+.main__DetailsSection {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #AFAFAF 1px solid;
+}
+.main__DetailsSectionA {
+    display: flex;
+    justify-content: space-between;
+}
+.mainFormText {
+    margin-bottom: .3125rem;
+    font-size: .8125rem;
+    font-weight: 700;
+    color: #AFAFAF;
+}
+.mainCommentContainer {
+    display: flex;
+    border-bottom: #AFAFAF 1px solid;
+}
+#comment {
+    width: 12.5rem;
+    height: 6.25rem;
+}
+button {
+    width: 13rem;
+    height: 2.5rem;
+    margin-top: .9375rem;
+    margin-bottom: 1rem;
+    background-color: #0095FF;
+    color: #FFFFFF;
+    font-size: .625rem;
+    font-weight: 700;
+}
+button:hover {
+    background-color: #0065AD;
+  }
