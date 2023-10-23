@@ -10,10 +10,10 @@ import './App.scss';
 
 
 function App() {
-  const [currentDetails, setCurrentDetails] = useState (
+  const [currentDetails, setCurrentDetails] = useState(
     details[0]
   )
-  
+
   const heroVideo = details.find(video => video.id === currentDetails.id);
   const handleClick = (newVideoID) => {
     setCurrentDetails(details.find(video => video.id === newVideoID))
@@ -22,17 +22,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero videoDetails={heroVideo}/>
-      <Main 
-        currentDetails={currentDetails}/> 
-      <Comments 
-      key={currentDetails.id}
-      name={currentDetails.comments}
-      timestamp={currentDetails.timestamp}
-      comments={currentDetails.comments} />
-      <Sidebar 
-      handleClick={handleClick}
-      currentDetails={currentDetails}/>
+      <Hero videoDetails={heroVideo} />
+      <Main
+        currentDetails={currentDetails} />
+      <Comments
+        key={currentDetails.id}
+        name={currentDetails.comments}
+        timestamp={currentDetails.timestamp}
+        comments={currentDetails.comments} />
+      <Sidebar
+        handleClick={handleClick}
+        currentDetails={currentDetails} />
     </div>
   );
 }
