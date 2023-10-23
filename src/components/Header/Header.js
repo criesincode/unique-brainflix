@@ -1,10 +1,11 @@
 import "./Header.scss"
-
+import MohanMurugeImage from "../../assets/images/Mohan-muruge.jpg";
+import bflixLogo from "../../assets/logo/BrainFlix-logo.svg"
 
 const Header = () => {
     return (
         <header className="navbar">
-            <img className="navbarlogo" src="../../assets/logo" alt="logo"/>
+            <img className="navbarlogo" src={bflixLogo}alt="logo"/>
         <div className="navbarContainer">
             <div className="navbarForm__Container">
                 <form className="navbarInput">
@@ -14,7 +15,7 @@ const Header = () => {
                 </form>
                 
             </div>
-            <img className="navbarAvi" src="" alt="avi"/>
+            <img className="navbarAvi" src={MohanMurugeImage} alt="avi"/>
             
         </div>
     </header>
