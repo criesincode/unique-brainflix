@@ -1,4 +1,12 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 .heroVideo {
     width: 100%;
     height: 18.75rem;
+    margin-top: -4.375rem;
+    @include tablet {
+        height: 12.5rem;
+        margin-top: 2.5rem;
+    }
 }
