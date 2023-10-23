@@ -9,6 +9,7 @@ import details from "./data/video-details.json"
 import videoDetails from "./data/video-details.json"
 import './App.scss';
 
+
 function App() {
   const [currentDetails, setCurrentDetails] = useState (
     details[0]
@@ -17,14 +18,21 @@ function App() {
   const heroVideo = videoDetails.find(video => video.id === heroVideoId);
 
 
+  const [currentVideo, setCurrentVideo] = useState (
+    details[0]
+  )
   return (
     <div className="App">
       <Header />
       <Hero videoDetails={heroVideo}/>
       <Main 
-        currentDetails={currentDetails}/>
-      {/* <Comments />
-      <Sidebar /> */} 
+        currentDetails={currentDetails}/> 
+      <Comments 
+      key={currentVideo.id}
+      name={currentVideo.comments}
+      timestamp={currentVideo.timestamp}
+      comments={currentVideo.comments} />
+      <Sidebar />
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.comments {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: #AFAFAF 1px solid;
+}
+.commentsAvi {
+    background-color: #E1E1E1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: .625rem;
+    margin-right: .625rem;
+}
+.commentsContainer {
+    width: 16.25rem;
+}
+.commentsName{
+    font-size: .8125rem;
+    font-weight: 700;
+}
+.commentTimeStamp {
+    font-size: .8125rem;
+    color: #AFAFAF;
+}
+.commentsComment {
+    margin-top: 0rem;
+}
