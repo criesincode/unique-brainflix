@@ -1,5 +1,6 @@
 import "./Header.scss"
 
+
 const Header = () => {
     return (
         <header className="navbar">
@@ -9,6 +10,7 @@ const Header = () => {
                 <form className="navbarInput">
                     <input type="search" id="bflixSearch" name="bflixSearch" placeholder="Search"></input>
                     <button className="navbarButton">UPLOAD</button>
+                    <button className="navbarButtonB">UPLOAD</button>
                 </form>
                 
             </div>

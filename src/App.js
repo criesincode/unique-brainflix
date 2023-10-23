@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero.js"
 import Main from "./components/Main/Main.js"
 import Comments from "./components/Comments/Comments.js"
 import Sidebar from "./components/Sidebar/Sidebar.js"
+import mixins from "./styles/partials/_mixins.scss"
 import './App.scss';
 
 function App() {
