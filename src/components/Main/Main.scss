@@ -17,12 +17,22 @@
     color: #AFAFAF;
     font-size: .8125rem;
 }
+.views {
+    margin-right: .625rem;
+}
 .mainLikes {
     color: #AFAFAF;
     font-size: .8125rem;
 }
+.likes {
+    margin-right: .625rem;
+}
 .mainInfoA {
     font-size: .8125rem;
+}
+.mainInfoB {
+    font-size: .8125rem;
+    font-weight: 700;
 }
 .main__DetailsSection {
     display: flex;
@@ -43,12 +53,19 @@
     display: flex;
     border-bottom: #AFAFAF 1px solid;
 }
+.mainCommentImage {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 1.5625rem;
+    margin-right: 1.25rem;
+    margin-top: 1.5625rem;
+}
 #comment {
-    width: 12.5rem;
+    width: 13.125rem;
     height: 6.25rem;
 }
 button {
-    width: 13rem;
+    width: 13.625rem;
     height: 2.5rem;
     margin-top: .9375rem;
     margin-bottom: 1rem;
@@ -56,6 +73,8 @@ button {
     color: #FFFFFF;
     font-size: .625rem;
     font-weight: 700;
+    border: none;
+    border-radius: .25rem;
 }
 button:hover {
     background-color: #0065AD;

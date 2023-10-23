@@ -1,6 +1,11 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *; 
 
+.navbar {
+    @include tablet {
+    display: flex;
+    }
+}
 .navbarContainer{
     display: flex;
     justify-content: center;
@@ -9,6 +14,9 @@
     padding-left: 4.375rem;
     margin-top: .625rem;
     margin-bottom: .625rem;
+    @include tablet {
+        padding-left: 12.5rem;
+    }
 }
 form {
     display: flex;
@@ -44,7 +52,7 @@ form {
     border-radius: .25rem;
     display: none;
     @include tablet {
-        display: contents;
+        display: flex;
     }
 
 }

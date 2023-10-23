@@ -1,5 +1,7 @@
 import React from "react"
 import MohanMurugeImage from "../../assets/images/Mohan-muruge.jpg"
+import viewsIcon from "../../assets/icons/views.svg"
+import likesIcon from "../../assets/icons/likes.svg"
 import "./Main.scss"
 
 const Main = ({ currentDetails }) => {
@@ -11,11 +13,11 @@ const Main = ({ currentDetails }) => {
                 <div className="main__DetailsContainer">
                     <div className="main__DetailsSectionA">
                         <p className="mainAuthor">By {currentDetails.channel}</p>
-                        <p className="mainDate">{currentDetails.timestamp}</p>
+                        <p className="mainDate"><img className="views" src={viewsIcon}/>{currentDetails.views}</p>
                     </div>
                     <div className="main__DetailsSection">
-                        <p className="mainViews">{currentDetails.views}</p>
-                        <p className="mainLikes">{currentDetails.likes}</p>
+                        <p className="mainViews">{currentDetails.timestamp}</p>
+                        <p className="mainLikes"><img className="likes" src={likesIcon}/>{currentDetails.likes}</p>
                     </div>
                     <div className="main__DetailsDescription">
                         <p className="mainInfoA">{currentDetails.description}</p>
