@@ -24,7 +24,7 @@ const Main = ({ currentDetails }) => {
                         <p className="mainInfoB">3 Comments</p>
                     </div>
                     <div className="main__DetailsForm"> 
-                    
+                    <p className="mainFormTextA">JOIN THE CONVERSATION</p>
                         <div className="mainCommentContainer">
                         <img className="mainCommentImage" src={MohanMurugeImage} alt="murage img"/>
                             <form id="mainCommentForm">
