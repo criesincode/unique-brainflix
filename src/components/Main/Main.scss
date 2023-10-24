@@ -18,6 +18,9 @@
         font-size: .875rem;
     }
 }
+.mainAuthorB {
+    @include tablet
+}
 .mainDate {
     color: #AFAFAF;
     font-size: .8125rem;
@@ -25,11 +28,21 @@
         font-size: .875rem;
     }
 }
+.mainDateB {
+    @include tablet {
+
+    }
+}
 .mainViews {
     color: #AFAFAF;
     font-size: .8125rem;
     @include tablet {
         font-size: .875rem;
+    }
+}
+.mainViewsB {
+    @include tablet {
+
     }
 }
 .views {
@@ -41,6 +54,9 @@
     @include tablet {
         font-size: .875rem;
     }
+}
+.mainLikesB {
+    @include tablet
 }
 .likes {
     margin-right: .625rem;
@@ -60,16 +76,34 @@
         font-size: .875rem;
     }
 }
+.main__DetailsContainerB {
+    @include tablet {
+        display: flex;
+    }
+}
 .main__DetailsSection {
     display: flex;
     justify-content: space-between;
     border-bottom: #AFAFAF 1px solid;
+    @include tablet {
+        display: none;
+    }
 }
 .main__DetailsSectionA {
     display: flex;
     justify-content: space-between;
     @include tablet {
-        
+       display: none; 
+    }
+}
+.main__DetailsSectionB {
+    @include tablet {
+    display: flex;
+    }
+}
+.main__DetailsSectionC {
+     @include tablet {
+    display: flex;
     }
 }
 .mainFormText {
@@ -78,8 +112,7 @@
     font-weight: 700;
     color: #AFAFAF;
     @include tablet {
-     display: none;
-        
+     display: none;   
     }
 }
 .mainFormTextA{
