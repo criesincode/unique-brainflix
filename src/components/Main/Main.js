@@ -8,7 +8,7 @@ const Main = ({ currentDetails }) => {
     return (
         <main className="main">
             <div className="main__TitleContainer">
-            <p className="main__Title">{currentDetails.title}</p>
+                <p className="main__Title">{currentDetails.title}</p>
                 <div className="main__DetailsContainerB">
                     <div className="main__DetailsSectionB">
                         <p className="mainAuthorB">By {currentDetails.channel}</p>
