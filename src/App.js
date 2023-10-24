@@ -7,6 +7,8 @@ import Comments from "./components/Comments/Comments.js"
 import Sidebar from "./components/Sidebar/Sidebar.js"
 import details from "./data/video-details.json"
 import './App.scss';
+import { BrowserRouter, Routes } from "react-router-dom"
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
   }
 
   return (
+    <BrowserRouter>
     <div className="App">
       <Header />
       <Hero videoDetails={heroVideo} />
@@ -39,6 +42,11 @@ function App() {
         currentDetails={currentDetails} />
         </div>
     </div>
+    <Routes>
+        <Route path="sidebar" element={<Sidebar />} />
+        <Route path="sidebar/:productId" element={<ProductDetailsPage />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
