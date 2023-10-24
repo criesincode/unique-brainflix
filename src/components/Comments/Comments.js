@@ -18,7 +18,7 @@ const Comments = ({comments}) => {
             )
         })}
        </> 
-    )
+    )       
 }
 
 export default Comments;
