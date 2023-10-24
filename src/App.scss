@@ -13,3 +13,19 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.desktopView {
+  @include desktop {
+    display: flex;
+  }
+}
+.desktopA{
+  @include desktop {
+    margin-right: 1.25rem;
+    border-right: #AFAFAF 1px solid;
+  }
+}
+.desktopB {
+  @include desktop {
+    width: 6.25rem;
+  }
+}
