@@ -1,7 +1,13 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 .comments {
     display: flex;
     justify-content: space-evenly;
     border-bottom: #AFAFAF 1px solid;
+    @include tablet {
+        justify-content:flex-start;
+    }
 }
 .commentsAvi {
     background-color: #E1E1E1;
@@ -10,18 +16,34 @@
     border-radius: 50%;
     margin-top: .625rem;
     margin-right: .625rem;
+    @include tablet {
+        margin-top: 1.5625rem;
+    }
 }
 .commentsContainer {
     width: 16.25rem;
+    @include tablet {
+        width: 41.875rem;
+    }
 }
 .commentsName{
     font-size: .8125rem;
     font-weight: 700;
+    @include tablet {
+        margin-top: 1.875rem;
+    }
 }
 .commentTimeStamp {
     font-size: .8125rem;
     color: #AFAFAF;
+    @include tablet {
+        margin-top: 1.875rem;
+    }
 }
 .commentsComment {
     margin-top: 0rem;
+    @include tablet {
+        width: 40.625rem;
+        margin-bottom: 1.875rem;
+    }
 }

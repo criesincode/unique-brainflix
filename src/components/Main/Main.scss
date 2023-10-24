@@ -19,7 +19,11 @@
     }
 }
 .mainAuthorB {
-    @include tablet
+    @include tablet {
+    font-weight: 700;
+    font-size: .875rem;
+    margin-right: 1.875rem;
+    }
 }
 .mainDate {
     color: #AFAFAF;
@@ -30,7 +34,8 @@
 }
 .mainDateB {
     @include tablet {
-
+        color: #AFAFAF;
+        font-size: .875rem;
     }
 }
 .mainViews {
@@ -42,7 +47,8 @@
 }
 .mainViewsB {
     @include tablet {
-
+        color: #AFAFAF;
+        font-size: .875rem;
     }
 }
 .views {
@@ -56,7 +62,12 @@
     }
 }
 .mainLikesB {
-    @include tablet
+    @include tablet {
+    color: #AFAFAF;
+    font-size: .875rem;
+    margin-left: 1.875rem;
+    }
+    
 }
 .likes {
     margin-right: .625rem;
@@ -79,6 +90,7 @@
 .main__DetailsContainerB {
     @include tablet {
         display: flex;
+        justify-content: space-between;
     }
 }
 .main__DetailsSection {
