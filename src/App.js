@@ -23,6 +23,8 @@ function App() {
     <div className="App">
       <Header />
       <Hero videoDetails={heroVideo} />
+      <div className="desktopView">
+      <div className="desktopA">
       <Main
         currentDetails={currentDetails} />
       <Comments
@@ -30,9 +32,12 @@ function App() {
         name={currentDetails.comments}
         timestamp={currentDetails.timestamp}
         comments={currentDetails.comments} />
+        </div>
+        <div className="desktopB"></div>
       <Sidebar
         handleClick={handleClick}
         currentDetails={currentDetails} />
+        </div>
     </div>
   );
 }

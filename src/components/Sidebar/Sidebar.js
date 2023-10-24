@@ -6,7 +6,7 @@ import "./Sidebar.scss"
 
 const Sidebar = ({ handleClick, currentDetails }) => {
     return (
-        <section>
+        <section className="sideSection">
             <p className="videosHeading">NEXT VIDEOS</p>
             <aside className="sidebar">
                 {videos
