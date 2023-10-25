@@ -7,16 +7,17 @@ const VideoDetailsPage = () => {
   const [videoDetails, setVideoDetails] = useState(null);
 
   useEffect(() => {
-    
-    axios
-      .get(`https://project-2-api.herokuapp.com/videos/${videoId}?api_key=a508756-ed08-4d31-9de7-9a600696cc9e`)
-      .then(response => {
+    const fetchVideoDetails = async () => {
+      try {
+        const response = await axios.get(`https://project-2-api.herokuapp.com/videos/${videoId}?api_key=a508756-ed08-4d31-9de7-9a600696cc9e`);
         setVideoDetails(response.data);
-      })
-      .catch(error => {
+      } catch (error) {
         console.error('Error fetching data:', error);
-      });
-  }, [videoId]); 
+      }
+    };
+
+    fetchVideoDetails();
+  }, [videoId]);
 
   if (!videoDetails) {
     return <div>Loading...</div>;
