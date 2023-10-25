@@ -7,7 +7,7 @@ const VideoDetailsPage = () => {
   const [videoDetails, setVideoDetails] = useState(null);
 
   useEffect(() => {
-    const fetchVideoDetails = async () => {
+    const getVideoDetails = async () => {
       try {
         const response = await axios.get(`https://project-2-api.herokuapp.com/videos/${videoId}?api_key=a508756-ed08-4d31-9de7-9a600696cc9e`);
         setVideoDetails(response.data);
@@ -16,7 +16,7 @@ const VideoDetailsPage = () => {
       }
     };
 
-    fetchVideoDetails();
+    getVideoDetails();
   }, [videoId]);
 
   if (!videoDetails) {

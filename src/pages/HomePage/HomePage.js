@@ -3,6 +3,7 @@ import Main from "../../components/Main/Main.js"
 import Comments from "../../components/Comments/Comments.js"
 import Sidebar from "../../components/Sidebar/Sidebar.js"
 import details from "../../data/video-details.json"
+import "./HomePage.scss"
 import { useState } from "react"
 
 
@@ -28,10 +29,11 @@ const HomePage = () => {
                         timestamp={currentDetails.timestamp}
                         comments={currentDetails.comments} />
                 </div>
-                <div className="desktopB"></div>
+                <div className="desktopB">
                 <Sidebar
                     handleClick={handleClick}
                     currentDetails={currentDetails} />
+                </div>    
             </div>
         </>
     )

@@ -15,6 +15,7 @@ import Sidebar from "./components/Sidebar/Sidebar.js";
 import HomePage from "./pages/HomePage/HomePage.js";
 import VideoDetailsPage from "./pages/VideoDetailsPage/VideoDetailsPage.js";
 import { useState } from "react";
+import "./App.scss"
 import details from "./data/video-details.json"
 
 function App() {
@@ -34,68 +35,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/videos/:videoId" element={<VideoDetailsPage />} />
         </Routes>
-        <Hero videoDetails={heroVideo} />
-//       <div className="desktopView">
-//       <div className="desktopA">
-//       <Main
-        currentDetails={currentDetails} />
-//       <Comments
-        key={currentDetails.id}
-        name={currentDetails.comments}
-        timestamp={currentDetails.timestamp}
-        comments={currentDetails.comments} />
-        </div>
-        <div className="desktopB"></div>
-      <Sidebar
-        handleClick={handleClick}
-        currentDetails={currentDetails} />
-        </div>
       </Router>
     </div>
   );
 }
 
 export default App;
-
-
-// function App() {
-//   const [currentDetails, setCurrentDetails] = useState(
-//     details[0]
-//   )
-
-//   const heroVideo = details.find(video => video.id === currentDetails.id);
-//   const handleClick = (newVideoID) => {
-//     setCurrentDetails(details.find(video => video.id === newVideoID))
-//   }
-
-//   return (
-//     <div className="App">
-//       <BrowserRouter>
-//       <Header />
-//         <Routes>
-//           <Route path="/" element={<HomePage />}/>
-//           <Route path="/videos" element={<VideoPage />}/>
-//           <Route path="/videos/:video.id" element={VideoDetailsPage}/>
-//         </Routes>
-//       {/* <Hero videoDetails={heroVideo} />
-//       <div className="desktopView">
-//       <div className="desktopA">
-//       <Main
-//         currentDetails={currentDetails} />
-//       <Comments
-//         key={currentDetails.id}
-//         name={currentDetails.comments}
-//         timestamp={currentDetails.timestamp}
-//         comments={currentDetails.comments} />
-//         </div>
-//         <div className="desktopB"></div>
-//       <Sidebar
-//         handleClick={handleClick}
-//         currentDetails={currentDetails} />
-//         </div> */}
-//         </BrowserRouter>
-//     </div>
-//   );
-// }
-
-// // export default App;
