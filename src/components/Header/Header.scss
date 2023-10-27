@@ -3,32 +3,38 @@
 
 .navbar {
     @include tablet {
-    display: flex;
+        display: flex;
     }
 }
-.navbarContainer{
+
+.navbar__container {
     display: flex;
     justify-content: center;
 }
-.navbarlogo {
+
+.navbar__logo {
     padding-left: 4.375rem;
     margin-top: .625rem;
     margin-bottom: .625rem;
+
     @include tablet {
         padding-left: 1.5625rem;
-    }
-    @include desktop {
-        margin-right: 31.875rem;
+        @include desktop {
+            margin-right: 31.875rem;
+        }
     }
 }
-form {
+
+.navbar__form {
     display: flex;
     flex-direction: column;
+
     @include tablet {
         flex-direction: row;
     }
 }
-.navbarButton{
+
+.navbar__button {
     width: 16.25rem;
     height: 2.5rem;
     background-color: #0095FF;
@@ -38,13 +44,14 @@ form {
     border: none;
     border-radius: .25rem;
     margin-left: .9375rem;
+
     @include tablet {
         display: none;
         margin-left: .9375rem;
     }
-
 }
-.navbarButtonB{
+
+.navbar__button--b {
     width: 7.8125rem;
     height: 2.5rem;
     background-color: #0095FF;
@@ -54,29 +61,33 @@ form {
     border: none;
     border-radius: .25rem;
     display: none;
+
     @include tablet {
         display: flex;
         margin-left: 1.25rem;
         padding-top: .9375rem;
         padding-left: 2.5rem;
     }
-
 }
-#bflixSearch{
+
+#bflixSearch {
     width: 13.75rem;
     height: 2.5rem;
     margin-bottom: .625rem;
     margin-left: 1.25rem;
+
     @include tablet {
         margin-top: .9375rem;
         margin-left: 9.375rem;
     }
 }
-.navbarAvi {
+
+.navbar__avi {
     width: 3.125rem;
     height: 3.125rem;
     border-radius: 1.5625rem;
     margin-left: -1.25rem;
+
     @include tablet {
         margin-left: 1.5625rem;
         margin-top: .625rem;
