@@ -8,6 +8,7 @@ import axios from "axios"
 import {useParams} from "react-router-dom"
 
 
+
 const HomePage = () => {
     const [currentDetails, setCurrentDetails] = useState([])
       
