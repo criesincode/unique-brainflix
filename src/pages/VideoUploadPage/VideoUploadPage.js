@@ -30,3 +30,5 @@ const VideoUploadPage = () => {
         </>
     )
 }
+
+export default VideoUploadPage;
