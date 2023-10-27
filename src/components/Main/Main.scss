@@ -1,194 +1,269 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-.main__TitleContainer {
-    border-bottom: #AFAFAF 1px solid;
-}
-.main__Title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    @include tablet {
-        font-size: 2.0625rem;
-    }
-}
-.mainAuthor {
-    font-size: .8125rem;
-    font-weight: 700;
-    @include tablet {
-        font-size: .875rem;
-    }
-}
-.mainAuthorB {
-    @include tablet {
-    font-weight: 700;
-    font-size: .875rem;
-    margin-right: 1.875rem;
-    }
-}
-.mainDate {
-    color: #AFAFAF;
-    font-size: .8125rem;
-    @include tablet {
-        font-size: .875rem;
-    }
-}
-.mainDateB {
-    @include tablet {
-        color: #AFAFAF;
-        font-size: .875rem;
-    }
-}
-.mainViews {
-    color: #AFAFAF;
-    font-size: .8125rem;
-    @include tablet {
-        font-size: .875rem;
-    }
-}
-.mainViewsB {
-    @include tablet {
-        color: #AFAFAF;
-        font-size: .875rem;
-    }
-}
-.views {
-    margin-right: .625rem;
-}
-.mainLikes {
-    color: #AFAFAF;
-    font-size: .8125rem;
-    @include tablet {
-        font-size: .875rem;
-    }
-}
-.mainLikesB {
-    @include tablet {
-    color: #AFAFAF;
-    font-size: .875rem;
-    margin-left: 1.875rem;
-    }
+
+.main {
+    /* ... */
     
-}
-.likes {
-    margin-right: .625rem;
-}
-.mainInfoA {
-    font-size: .8125rem;
-    @include tablet {
-        font-size: .875rem;
-        margin-top: 1.5625rem;
-        margin-bottom: 1.875rem;
+    /* Element: mainTitleContainer */
+    &__title-container {
+        border-bottom: #AFAFAF 1px solid;
     }
-}
-.mainInfoB {
-    font-size: .8125rem;
-    font-weight: 700;
-    @include tablet {
-        font-size: .875rem;
+
+    /* Element: mainTitle */
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        @include tablet {
+            font-size: 2.0625rem;
+        }
     }
-}
-.main__DetailsContainerB {
-    @include tablet {
+
+    /* Element: mainAuthor */
+    &__author {
+        font-size: .8125rem;
+        font-weight: 700;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+    }
+
+    /* Element: mainAuthorB */
+    &__author--b {
+        display: none;
+        @include tablet {
+            font-weight: 700;
+            font-size: .875rem;
+            margin-right: 1.875rem;
+        }
+    }
+
+    /* Element: mainDate */
+    &__date {
+        color: #AFAFAF;
+        font-size: .8125rem;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+    }
+
+    /* Element: mainDateB */
+    &__date--b {
+        display: none;
+        @include tablet {
+            color: #AFAFAF;
+            font-size: .875rem;
+        }
+    }
+
+    /* Element: mainViews */
+    &__views {
+        color: #AFAFAF;
+        font-size: .8125rem;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+    }
+
+    /* Element: mainViewsB */
+    &__views--b {
+        display: none;
+        @include tablet {
+            color: #AFAFAF;
+            font-size: .875rem;
+        }
+    }
+
+    /* Element: views */
+    .views {
+        margin-right: .625rem;
+    }
+
+    /* Element: mainLikes */
+    &__likes {
+        color: #AFAFAF;
+        font-size: .8125rem;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+    }
+
+    /* Element: mainLikesB */
+    &__likes--b {
+        display: none;
+        @include tablet {
+            color: #AFAFAF;
+            font-size: .875rem;
+            margin-left: 1.875rem;
+        }
+    }
+
+    /* Element: likes */
+    .likes {
+        margin-right: .625rem;
+    }
+
+    /* Element: mainInfoA */
+    &__info--a {
+        font-size: .8125rem;
+
+        @include tablet {
+            font-size: .875rem;
+            margin-top: 1.5625rem;
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    /* Element: mainInfoB */
+    &__info--b {
+        font-size: .8125rem;
+        font-weight: 700;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+    }
+
+    /* Element: mainDetailsContainerB */
+    &__details-container--b {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    /* Element: mainDetailsSection */
+    &__details-section {
         display: flex;
         justify-content: space-between;
+        border-bottom: #AFAFAF 1px solid;
+
+        @include tablet {
+            display: none;
+        }
     }
-}
-.main__DetailsSection {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: #AFAFAF 1px solid;
-    @include tablet {
-        display: none;
+
+    /* Element: mainDetailsSectionA */
+    &__details-section--a {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            display: none;
+        }
     }
-}
-.main__DetailsSectionA {
-    display: flex;
-    justify-content: space-between;
-    @include tablet {
-       display: none; 
+
+    /* Element: mainDetailsSectionB */
+    &__details-section--b {
+        @include tablet {
+            display: flex;
+        }
     }
-}
-.main__DetailsSectionB {
-    @include tablet {
-    display: flex;
+
+    /* Element: mainDetailsSectionC */
+    &__details-section--c {
+        @include tablet {
+            display: flex;
+        }
     }
-}
-.main__DetailsSectionC {
-     @include tablet {
-    display: flex;
-    }
-}
-.mainFormText {
-    margin-bottom: .3125rem;
-    font-size: .8125rem;
-    font-weight: 700;
-    color: #AFAFAF;
-    @include tablet {
-     display: none;   
-    }
-}
-.mainFormTextA{
-    @include tablet {
+
+    /* Element: mainFormText */
+    &__form-text {
+        margin-bottom: .3125rem;
         font-size: .8125rem;
         font-weight: 700;
         color: #AFAFAF;
-        padding-left: 4.375rem;
-        font-size: .875rem;
-    }
-}
-.mainCommentInput {
-    @include tablet {
-    display: flex;
-    margin-left: 1.25rem;
-    margin-top: -1.5625rem;
-    }
-}
-.mainCommentContainer {
-    display: flex;
-    border-bottom: #AFAFAF 1px solid;
-    @include tablet {
-        
 
+        @include tablet {
+            display: none;
+        }
     }
-}
-.mainCommentImage {
-    width: 3.125rem;
-    height: 3.125rem;
-    border-radius: 1.5625rem;
-    margin-right: 1.25rem;
-    margin-top: 1.5625rem;
-    @include tablet {
-        margin-top: .625rem;
-        margin-right: 0;
-        margin-top: -1.25rem;
+
+    /* Element: mainFormTextA */
+    &__form-text--a {
+        display: none;
+        @include tablet {
+            display: flex;
+            font-size: .8125rem;
+            font-weight: 700;
+            color: #AFAFAF;
+            padding-left: 4.375rem;
+            font-size: .875rem;
+        }
     }
-}
-#comment {
-    width: 13.125rem;
-    height: 1.875rem;
-    @include tablet {
+
+    /* Element: mainCommentInput */
+    &__comment-input {
+        @include tablet {
+            display: flex;
+            margin-left: 1.25rem;
+            margin-top: -1.5625rem;
+        }
+    }
+
+    /* Element: mainCommentContainer */
+    &__comment-container {
+        display: flex;
+        border-bottom: #AFAFAF 1px solid;
+
+        @include tablet {
+            /* ... */
+        }
+    }
+
+    /* Element: mainCommentImage */
+    &__comment-image {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 1.5625rem;
+        margin-right: 1.25rem;
+        margin-top: 1.5625rem;
+
+        @include tablet {
+            margin-top: .625rem;
+            margin-right: 0;
+            margin-top: -1.25rem;
+        }
+    }
+
+    /* Element: comment */
+    #comment {
+        width: 13.125rem;
+        height: 1.875rem;
+
+        @include tablet {
+            margin-top: .9375rem;
+            margin-right: 1.5625rem;
+            height: 2.125rem;
+            width: 28.75rem;
+        }
+    }
+
+    /* Element: button */
+    button {
+        width: 13.625rem;
+        height: 2.5rem;
         margin-top: .9375rem;
-        margin-right: 1.5625rem;
-        height: 2.125rem;
-        width: 28.75rem;
+        margin-bottom: 1rem;
+        background-color: #0095FF;
+        color: #FFFFFF;
+        font-size: .625rem;
+        font-weight: 700;
+        border: none;
+        border-radius: .25rem;
+
+        @include tablet {
+            width: 10.9375rem;
+            font-size: .75rem;
+        }
+
+        &:hover {
+            background-color: #0065AD;
+        }
     }
 }
-button {
-    width: 13.625rem;
-    height: 2.5rem;
-    margin-top: .9375rem;
-    margin-bottom: 1rem;
-    background-color: #0095FF;
-    color: #FFFFFF;
-    font-size: .625rem;
-    font-weight: 700;
-    border: none;
-    border-radius: .25rem;
-    @include tablet {
-        width: 10.9375rem;
-        font-size: .75rem;
-    }
-}
-button:hover {
-    background-color: #0065AD;
-  }

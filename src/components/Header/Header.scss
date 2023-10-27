@@ -1,17 +1,101 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *; 
 
+// .navbar {
+//     @include tablet {
+//     display: flex;
+//     }
+// }
+// .navbarContainer{
+//     display: flex;
+//     justify-content: center;
+// }
+// .navbarlogo {
+//     padding-left: 4.375rem;
+//     margin-top: .625rem;
+//     margin-bottom: .625rem;
+//     @include tablet {
+//         padding-left: 1.5625rem;
+//     }
+//     @include desktop {
+//         margin-right: 31.875rem;
+//     }
+// }
+// form {
+//     display: flex;
+//     flex-direction: column;
+//     @include tablet {
+//         flex-direction: row;
+//     }
+// }
+// .navbarButton{
+//     width: 16.25rem;
+//     height: 2.5rem;
+//     background-color: #0095FF;
+//     color: #FFFFFF;
+//     font-size: .625rem;
+//     font-weight: 700;
+//     border: none;
+//     border-radius: .25rem;
+//     margin-left: .9375rem;
+//     @include tablet {
+//         display: none;
+//         margin-left: .9375rem;
+//     }
+
+// }
+// .navbarButtonB{
+//     width: 7.8125rem;
+//     height: 2.5rem;
+//     background-color: #0095FF;
+//     color: #FFFFFF;
+//     font-size: .625rem;
+//     font-weight: 700;
+//     border: none;
+//     border-radius: .25rem;
+//     display: none;
+//     @include tablet {
+//         display: flex;
+//         margin-left: 1.25rem;
+//         padding-top: .9375rem;
+//         padding-left: 2.5rem;
+//     }
+
+// }
+// #bflixSearch{
+//     width: 13.75rem;
+//     height: 2.5rem;
+//     margin-bottom: .625rem;
+//     margin-left: 1.25rem;
+//     @include tablet {
+//         margin-top: .9375rem;
+//         margin-left: 9.375rem;
+//     }
+// }
+// .navbarAvi {
+//     width: 3.125rem;
+//     height: 3.125rem;
+//     border-radius: 1.5625rem;
+//     margin-left: -1.25rem;
+//     @include tablet {
+//         margin-left: 1.5625rem;
+//         margin-top: .625rem;
+//     }
+// }
+/* Block: navbar */
 .navbar {
     @include tablet {
         display: flex;
     }
 }
 
+/* Element: navbarContainer */
 .navbar__container {
     display: flex;
     justify-content: center;
 }
 
+/* Element: navbarLogo */
 .navbar__logo {
     padding-left: 4.375rem;
     margin-top: .625rem;
@@ -25,6 +109,7 @@
     }
 }
 
+/* Element: navbarForm */
 .navbar__form {
     display: flex;
     flex-direction: column;
@@ -33,6 +118,7 @@
         flex-direction: row;
     }
 }
+
 
 .navbar__button {
     width: 16.25rem;
@@ -61,7 +147,6 @@
     border: none;
     border-radius: .25rem;
     display: none;
-
     @include tablet {
         display: flex;
         margin-left: 1.25rem;
@@ -70,6 +155,7 @@
     }
 }
 
+/* Element: bflixSearch */
 #bflixSearch {
     width: 13.75rem;
     height: 2.5rem;
@@ -82,6 +168,7 @@
     }
 }
 
+/* Element: navbarAvi */
 .navbar__avi {
     width: 3.125rem;
     height: 3.125rem;
@@ -91,5 +178,5 @@
     @include tablet {
         margin-left: 1.5625rem;
         margin-top: .625rem;
-    }
+     }
 }
