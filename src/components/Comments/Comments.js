@@ -6,13 +6,13 @@ const Comments = ({ comments }) => {
         <>
             {Array.isArray(comments) && comments.map(comment => (
                 <section className="comments" key={comment.id}>
-                    <div className="commentsAvi"></div>
-                    <div className="commentsContainer">
+                    <div className="comments__avi"></div>
+                    <div className="comments__container">
                         <div className="commentsSectionA">
-                            <p className="commentsName">{comment.name}</p>
-                            <p className="commentTimeStamp">{comment.timestamp}</p>
+                            <p className="comments__name">{comment.name}</p>
+                            <p className="comments__timestamp">{comment.timestamp}</p>
                         </div>
-                        <p className="commentsComment">{comment.comment}</p>
+                        <p className="comment__comment">{comment.comment}</p>
                     </div>
                 </section>
             ))}
