@@ -5,7 +5,7 @@ const Hero = ({ videoDetails }) => {
   
     return (
     <section className="hero">
-        <video className="heroVideo" poster={videoDetails.image}>
+        <video className="hero__video" poster={videoDetails.image}>
         </video>
     </section>
     )
