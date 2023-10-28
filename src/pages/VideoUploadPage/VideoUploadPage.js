@@ -26,8 +26,10 @@ const VideoUploadPage = () => {
                         <label className="description" htmlFor="description"></label>
                         <input type="description" name="description" id="description" placeholder="Add a description to your video" />
                         <br />
+                        <div className="button__container">
                         <button className="button">PUBLISH</button>
                         <button className="button__b">CANCEL</button>
+                        </div>
                     </div>
                 </form>
 

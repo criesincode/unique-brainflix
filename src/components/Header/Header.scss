@@ -10,6 +10,9 @@
 .navbar__container {
     display: flex;
     justify-content: center;
+    @include tablet {
+        flex-direction: row;
+    }
 }
 
 .navbar__logo {
@@ -25,14 +28,13 @@
     }
 }
 
-.navbar__form {
-    display: flex;
-    flex-direction: column;
-
-    @include tablet {
-        flex-direction: row;
-    }
-}
+// .navbar__form {
+//     display: flex;
+//     // flex-direction: column;
+//     @include tablet {
+//         // flex-direction: row;
+//     }
+// }
 
 .navbar__button {
     width: 16.25rem;
@@ -50,7 +52,6 @@
     background-position: (.7rem .3rem);
     @include tablet {
         display: none;
-        margin-left: .9375rem;
     }
 }
 
@@ -71,6 +72,7 @@
     @include tablet {
         display: flex;
         margin-left: 1.25rem;
+        margin-top: .9375rem;
         padding-top: .9375rem;
         padding-left: 2.5rem;
     }
@@ -83,7 +85,6 @@
     margin-left: 1rem;
     border: .125rem solid $brainflix-border;
     border-radius: .25rem;
-
     @include tablet {
         margin-top: .9375rem;
         margin-left: 9.375rem;

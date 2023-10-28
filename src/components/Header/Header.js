@@ -13,15 +13,15 @@ const Header = () => {
                     <form className="navbar__input">
                         <input type="search" id="bflixSearch" name="bflixSearch" placeholder="Search" src={searchIcon} ></input>
                         <button className="navbar__button">UPLOAD</button>
-                        <button className="navbar__button--b">UPLOAD</button>
                     </form>
                 </div>
+                <button className="navbar__button--b">UPLOAD</button>
                 <img className="navbar__avi" src={MohanMurugeImage} alt="avi" />
             </div>
 
-            <Link to="/upload" className="navbar__button navbar__button--b">
+            {/* <Link to="/upload" className="navbar__button navbar__button--b">
                 UPLOAD
-            </Link>
+            </Link> */}
         </header>
     );
 };
