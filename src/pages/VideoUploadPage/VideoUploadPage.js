@@ -13,8 +13,6 @@ const VideoUploadPage = () => {
                     <p className="upload__thumbnail--title">VIDEO THUMBNAIL</p>
                     <img className="upload__image" src={UploadVideo} alt="riding bike upload" />
                 </div>
-            </section>
-            <article>
                 <form>
                     <p className="form__text">TITLE YOUR VIDEO</p>
                     <div className="form__input">
@@ -37,7 +35,7 @@ const VideoUploadPage = () => {
                 PUBLISH
                 CANCEL
             </Link> */}
-            </article>
+            </section>
         </>
     )
 }

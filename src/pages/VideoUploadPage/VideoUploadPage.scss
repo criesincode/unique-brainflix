@@ -1,6 +1,11 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.upload {
+    @include desktop {
+        display: flex;
+    }
+}
 .title__container {
     border-top: $brainflix-border 1px solid;
     margin-top: .9375rem;
@@ -37,6 +42,9 @@
     margin-bottom: .625rem;
     border: .125rem solid $brainflix-border;
     border-radius: .25rem;
+    @include desktop {
+        width: 50%;
+    }
 }
 #description {
     width: 100%;
@@ -44,6 +52,9 @@
     margin-bottom: 1.5625rem;
     border: .125rem solid $brainflix-border;
     border-radius: .25rem;
+    @include desktop {
+        width: 50%;
+    }
 }
 .button__container {
     @include tablet {
