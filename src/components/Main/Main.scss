@@ -156,7 +156,6 @@
         font-size: .8125rem;
         font-weight: 700;
         color: #AFAFAF;
-
         @include tablet {
             display: none;
         }
@@ -204,8 +203,9 @@
 
     #comment {
         width: 13.125rem;
-        height: 1.875rem;
-
+        height: 6.25rem;
+        border: .125rem solid $brainflix-border;
+        border-radius: .25rem;
         @include tablet {
             margin-top: .9375rem;
             margin-right: 1.5625rem;
@@ -221,7 +221,6 @@
         margin-bottom: 1rem;
         background-color: #0095FF;
         color: #FFFFFF;
-        font-size: .625rem;
         font-weight: 700;
         border: none;
         border-radius: .25rem;
