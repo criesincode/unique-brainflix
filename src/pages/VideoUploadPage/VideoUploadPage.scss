@@ -1,9 +1,13 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.title__container {
+    border-top: $brainflix-border 2px solid;
+    margin-top: .9375rem;
+}
 .upload__title {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 .upload__thumbnail--title, .form__text, .form__text--b {
     color: $brainflix-secondary-text;
