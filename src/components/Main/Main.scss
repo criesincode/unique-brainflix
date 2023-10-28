@@ -224,7 +224,10 @@
         font-weight: 700;
         border: none;
         border-radius: .25rem;
-
+        background-image: url("../../assets/icons/add_comment.svg");
+        background-repeat: no-repeat;
+        background-size: 1.5rem;
+        background-position: (.7rem .5rem);
         @include tablet {
             width: 10.9375rem;
             font-size: .75rem;

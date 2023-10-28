@@ -1,5 +1,6 @@
 import "./VideoUploadPage.scss"
 import UploadVideo from "../../assets/images/Upload-video-preview.jpg"
+import { Link } from "react-router-dom"
 
 const VideoUploadPage = () => {
     return (
@@ -23,10 +24,15 @@ const VideoUploadPage = () => {
                         <label className="description" htmlFor="description"></label>
                         <input type="description" name="description" id="description" placeholder="Add a description to your video" />
                         <br />
-                        <button>PUBLISH</button>
+                        <button className="button">PUBLISH</button>
                         <button className="button__b">CANCEL</button>
                     </div>
                 </form>
+
+                {/* <Link to="/" className="button button--b">
+                PUBLISH
+                CANCEL
+            </Link> */}
             </article>
         </>
     )
