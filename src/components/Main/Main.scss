@@ -3,14 +3,11 @@
 
 
 .main {
-    /* ... */
-    
-    /* Element: mainTitleContainer */
+ 
     &__title-container {
         border-bottom: #AFAFAF 1px solid;
     }
 
-    /* Element: mainTitle */
     &__title {
         font-size: 1.5rem;
         font-weight: 700;
@@ -20,7 +17,6 @@
         }
     }
 
-    /* Element: mainAuthor */
     &__author {
         font-size: .8125rem;
         font-weight: 700;
@@ -30,7 +26,6 @@
         }
     }
 
-    /* Element: mainAuthorB */
     &__author--b {
         display: none;
         @include tablet {
@@ -40,7 +35,6 @@
         }
     }
 
-    /* Element: mainDate */
     &__date {
         color: #AFAFAF;
         font-size: .8125rem;
@@ -50,7 +44,6 @@
         }
     }
 
-    /* Element: mainDateB */
     &__date--b {
         display: none;
         @include tablet {
@@ -59,7 +52,6 @@
         }
     }
 
-    /* Element: mainViews */
     &__views {
         color: #AFAFAF;
         font-size: .8125rem;
@@ -69,7 +61,6 @@
         }
     }
 
-    /* Element: mainViewsB */
     &__views--b {
         display: none;
         @include tablet {
@@ -78,12 +69,10 @@
         }
     }
 
-    /* Element: views */
     .views {
         margin-right: .625rem;
     }
 
-    /* Element: mainLikes */
     &__likes {
         color: #AFAFAF;
         font-size: .8125rem;
@@ -93,7 +82,6 @@
         }
     }
 
-    /* Element: mainLikesB */
     &__likes--b {
         display: none;
         @include tablet {
@@ -103,12 +91,10 @@
         }
     }
 
-    /* Element: likes */
     .likes {
         margin-right: .625rem;
     }
 
-    /* Element: mainInfoA */
     &__info--a {
         font-size: .8125rem;
 
@@ -119,7 +105,6 @@
         }
     }
 
-    /* Element: mainInfoB */
     &__info--b {
         font-size: .8125rem;
         font-weight: 700;
@@ -129,7 +114,6 @@
         }
     }
 
-    /* Element: mainDetailsContainerB */
     &__details-container--b {
         @include tablet {
             display: flex;
@@ -137,7 +121,6 @@
         }
     }
 
-    /* Element: mainDetailsSection */
     &__details-section {
         display: flex;
         justify-content: space-between;
@@ -148,7 +131,6 @@
         }
     }
 
-    /* Element: mainDetailsSectionA */
     &__details-section--a {
         display: flex;
         justify-content: space-between;
@@ -158,21 +140,17 @@
         }
     }
 
-    /* Element: mainDetailsSectionB */
     &__details-section--b {
         @include tablet {
             display: flex;
         }
     }
 
-    /* Element: mainDetailsSectionC */
     &__details-section--c {
         @include tablet {
             display: flex;
         }
     }
-
-    /* Element: mainFormText */
     &__form-text {
         margin-bottom: .3125rem;
         font-size: .8125rem;
@@ -184,7 +162,6 @@
         }
     }
 
-    /* Element: mainFormTextA */
     &__form-text--a {
         display: none;
         @include tablet {
@@ -197,7 +174,6 @@
         }
     }
 
-    /* Element: mainCommentInput */
     &__comment-input {
         @include tablet {
             display: flex;
@@ -206,17 +182,12 @@
         }
     }
 
-    /* Element: mainCommentContainer */
     &__comment-container {
         display: flex;
         border-bottom: #AFAFAF 1px solid;
 
-        @include tablet {
-            /* ... */
-        }
     }
 
-    /* Element: mainCommentImage */
     &__comment-image {
         width: 3.125rem;
         height: 3.125rem;
@@ -231,7 +202,6 @@
         }
     }
 
-    /* Element: comment */
     #comment {
         width: 13.125rem;
         height: 1.875rem;
@@ -244,7 +214,6 @@
         }
     }
 
-    /* Element: button */
     button {
         width: 13.625rem;
         height: 2.5rem;

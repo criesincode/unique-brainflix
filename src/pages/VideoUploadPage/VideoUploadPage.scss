@@ -1,0 +1,55 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.upload__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.upload__thumbnail--title, .form__text, .form__text--b {
+    color: $brainflix-secondary-text;
+    font-size: .8125rem;
+    font-weight: 700;
+    margin-bottom: .5rem
+}
+.upload__image {
+    width: 100%;
+    height: 10.9375rem;
+    border-radius: .25rem;
+}
+#title {
+    width: 100%;
+    height: 40px;
+    margin-bottom: .625rem;
+    border: .125rem solid $brainflix-border;
+    border-radius: .25rem;
+}
+#description {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 1.5625rem;
+    border: .125rem solid $brainflix-border;
+    border-radius: .25rem;
+}
+button {
+    width: 103%;
+    height: 2.5rem;
+    color: $brainflix-primary-background;
+    background-color: $brainflix-primary;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 700;
+    margin-bottom: .9375rem;
+    background-image: url("../../assets/icons/upload.svg");
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: (.7rem .3rem);
+}
+.button__b {
+    width: 103%;
+    height: 2.5rem;
+    color: $brainflix-primary;
+    background-color: $brainflix-primary-background;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 700;
+}
