@@ -6,6 +6,9 @@
     @include tablet {
         margin-top: 8.75rem;
     }
+    @include desktop {
+        margin-top: 0;
+    }
  
     &__title-container {
         border-bottom: $brainflix-border 2px solid;
@@ -110,6 +113,9 @@
             margin-top: 1.5625rem;
             margin-bottom: 1.875rem;
         }
+        @include desktop {
+            font-size: 1.25rem;
+        }
     }
 
     &__info--b {
@@ -119,12 +125,15 @@
         @include tablet {
             font-size: .875rem;
         }
-    }
+    }    
 
     &__details-container--b {
         @include tablet {
             display: flex;
             justify-content: space-between;
+        }
+        @include desktop {
+            margin-right: .625rem;
         }
     }
 
@@ -190,8 +199,6 @@
 
     &__comment-container {
         display: flex;
-        border-bottom: $brainflix-border 2px solid;
-
     }
 
     &__comment-image {

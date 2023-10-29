@@ -26,19 +26,19 @@ const Sidebar = ({currentDetails}) => {
                 return <div>Loading...</div>;
               }
     return (
-        <section className="sideSection">
-            <p className="videosHeading">NEXT VIDEOS</p>
+        <section className="side__section">
+            <p className="videos__heading">NEXT VIDEOS</p>
             <aside className="sidebar">
                 {videoInfo
                 .filter(video => video.id !== currentDetails.id)
                 .map(video => {
                     return (
                         <article key={video.id} className="videos">
-                            <div className="videosContainer">
-                                <img className="videosImg" src={video.image} alt="video image" />
-                                <div className="videosSectionB">
-                                    <p className="videosTitle">{video.title}</p>
-                                    <p className="videosChannel">{video.channel}</p>
+                            <div className="videos__container">
+                                <img className="videos__img" src={video.image} alt="video image" />
+                                <div className="videos__section--b">
+                                    <p className="videos__title">{video.title}</p>
+                                    <p className="videos__channel">{video.channel}</p>
                                 </div>
                             </div>
                         </article>

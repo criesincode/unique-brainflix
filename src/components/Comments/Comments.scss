@@ -4,7 +4,7 @@
 .comments {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: #AFAFAF 1px solid;
+    border-top: #AFAFAF 1px solid;
 
     @include tablet {
         justify-content: flex-start;
@@ -29,6 +29,9 @@
 
     @include tablet {
         width: 41.875rem;
+    }
+    @include desktop {
+        width: 43.75rem;
     }
 }
 
@@ -57,4 +60,6 @@
         width: 40.625rem;
         margin-bottom: 1.875rem;
     }
+    
 }
+

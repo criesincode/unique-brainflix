@@ -4,13 +4,13 @@
 .desktopView {
     @include desktop {
       display: flex;
-      // margin-top: 18.75rem;
+      margin-top: 19.375rem;
+      height: 50%;
     }
   }
   .desktopA{
     @include desktop {
-      width: 53.125rem;
-      border-right: #AFAFAF 1px solid;
+      width: 50rem;
       height: 50%;
     }
   }
