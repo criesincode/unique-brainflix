@@ -1,21 +1,24 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.sideSection {
+    @include desktop {
+    width: 290%;
+    margin-left: 1.25rem;
+}
+}
 .videosHeading {
     font-size: .8125rem;
     color: #AFAFAF;
     font-weight: 700;
     @include tablet {
-        font-size: .875rem;
+        font-size: 1rem;
         margin-top: 1.875rem;
         margin-bottom: 1.875rem;
     }
 }
 .videosContainer {
     display: flex;
-    @include tablet {
-        
-    }
 }
 .videosTitle {
     padding-left: 1rem;
@@ -24,7 +27,9 @@
     font-size: .8125rem;
     font-weight: 700;
     @include tablet {
-        font-size: .875rem;
+        padding-top: 0;
+        padding-bottom: 1.25rem;
+        font-size: 1rem;
     }
 }
 .videosChannel {
@@ -32,16 +37,25 @@
     padding-top: .3125rem;
     font-size: .8125rem;
     @include tablet {
-        font-size: .875rem;
+        font-size: 1rem;
     }
 }
 .videosImg {
-    width: 6.25rem;
-    height: 4.6875rem;
+    width: 85px;
+    height: 75px;
     margin-bottom: .625rem;
     border-radius: .25rem;
     @include tablet {
-        width: 7.5rem;
+        width: 170px;
+        height: 6.875rem;
         margin-bottom: 1.5625rem;
+    }
+    @include desktop {
+        height: 6.25rem;
+    }
+}
+.videosSectionB {
+    @include tablet {
+        width: 210px;
     }
 }
