@@ -72,11 +72,14 @@
     background-position: (.7rem .3rem);
     display: none;
     @include tablet {
+        width: 8.125rem;
         display: flex;
         margin-left: 1.25rem;
         margin-top: .9375rem;
         padding-top: .9375rem;
         padding-left: 2.5rem;
+        background-size: 1.5rem;
+        background-position: (.7rem .5rem);
     }
     @include desktop {
         background-size: 1.5rem;
