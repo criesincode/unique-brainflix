@@ -32,9 +32,7 @@ const VideoUploadPage = () => {
                     </div>
                 </form>
 
-                {/* <Link to="/" className="button button--b">
-                PUBLISH
-                CANCEL
+                {/* <Link to="/" className="button">
             </Link> */}
             
             </section>
