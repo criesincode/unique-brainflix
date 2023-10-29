@@ -36,6 +36,7 @@ const VideoUploadPage = () => {
                 PUBLISH
                 CANCEL
             </Link> */}
+            
             </section>
         </>
     )
