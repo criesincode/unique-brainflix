@@ -54,7 +54,9 @@
         display: none;
     }
 }
-
+.navbar__button:hover {
+    background-color: $brainflix-hover;
+}
 .navbar__button--b {
     width: 7.8125rem;
     height: 2.5rem;
@@ -81,7 +83,9 @@
         background-position: (.7rem .5rem);
     }
 }
-
+.navbar__button--b:hover {
+    background-color: $brainflix-hover;
+}
 #bflixSearch {
     width: 13.75rem;
     height: 2.5rem;
