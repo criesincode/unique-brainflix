@@ -5,10 +5,11 @@ import { Link } from "react-router-dom"
 const VideoUploadPage = () => {
     return (
         <>
-            <section className="upload">
-                <div className="title__container">
+         <div className="title__container">
                 <p className="upload__title">Upload Video</p>
                 </div>
+            <section className="upload">
+               
                 <div className="upload__thumbnail">
                     <p className="upload__thumbnail--title">VIDEO THUMBNAIL</p>
                     <img className="upload__image" src={UploadVideo} alt="riding bike upload" />

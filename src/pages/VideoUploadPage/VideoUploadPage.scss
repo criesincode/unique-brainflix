@@ -3,7 +3,9 @@
 
 .upload {
     @include desktop {
+        width: 100%;
         display: flex;
+       
     }
 }
 .title__container {
@@ -35,6 +37,10 @@
     @include tablet {
         width: 45%;
     }
+    @include desktop {
+        width: 100%;
+        margin-right: 1.25rem;
+    }
 }
 #title {
     width: 100%;
@@ -43,8 +49,9 @@
     border: .125rem solid $brainflix-border;
     border-radius: .25rem;
     @include desktop {
-        width: 50%;
+        width: 54.6875rem;
     }
+    
 }
 #description {
     width: 100%;
@@ -53,7 +60,7 @@
     border: .125rem solid $brainflix-border;
     border-radius: .25rem;
     @include desktop {
-        width: 50%;
+        width: 54.6875rem;
     }
 }
 .button__container {
@@ -79,6 +86,11 @@
         width: 22%;
         font-size: 12px;
     }
+    @include desktop {
+        width: 11.25rem;
+        font-size: 12px;
+    }
+
 }
 .button__b {
     width: 103%;
@@ -92,5 +104,15 @@
     @include tablet {
         width: 22%;
         font-size: 12px;
+    }
+    @include desktop {
+    
+    }
+   
+}
+form {
+    @include desktop {
+        margin-left: 1.25rem;
+       
     }
 }
