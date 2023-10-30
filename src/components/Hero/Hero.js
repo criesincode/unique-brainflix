@@ -5,8 +5,10 @@ const Hero = ({ videoDetails }) => {
   
     return (
     <section className="hero">
-        <video className="heroVideo" poster={videoDetails.image}>
+        <div className="hero__container">
+        <video className="hero__video" poster={videoDetails.image} > 
         </video>
+        </div>
     </section>
     )
 }

@@ -1,24 +1,28 @@
-import "./Comments.scss"
+import React from "react";
+import "./Comments.scss";
 
-const Comments = ({comments}) => {
+const Comments = ({ comments, timestamp }) => {
+    let date = new Intl.DateTimeFormat("en-US", {
+        month: '2-digit',
+        day: '2-digit',
+        year: 'numeric'
+    }).format(timestamp)
     return (
         <>
-        {comments.map(comment =>{
-            return (
-                <section className="comments">
-                    <div className="commentsAvi"></div>
-                <div className="commentsContainer">
-                    <div className="commentsSectionA">
-                        <p className="commentsName">{comment.name}</p>
-                        <p className="commentTimeStamp">{comment.timestamp}</p>
+            {Array.isArray(comments) && comments.map(comment => (
+                <section className="comments" key={comment.id}>
+                    <div className="comments__avi"></div>
+                    <div className="comments__container">
+                        <div className="commentsSectionA">
+                            <p className="comments__name">{comment.name}</p>
+                            <p className="comments__timestamp">{date}</p>
+                        </div>
+                        <p className="comment__comment">{comment.comment}</p>
                     </div>
-                    <p className="commentsComment">{comment.comment}</p>
-                </div> 
-                </section>  
-            )
-        })}
-       </> 
-    )       
+                </section>
+            ))}
+        </>
+    );
 }
 
 export default Comments;

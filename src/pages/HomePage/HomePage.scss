@@ -1,0 +1,22 @@
+@use "../../styles/partials/mixins" as *;
+
+
+.desktopView {
+    @include desktop {
+      display: flex;
+      margin-top: 19.375rem;
+      height: 50%;
+    }
+  }
+  .desktopA{
+    @include desktop {
+      width: 50rem;
+      height: 50%;
+    }
+  }
+  .desktopB {
+    @include desktop {
+      width: 6.25rem;
+     
+    }
+  }

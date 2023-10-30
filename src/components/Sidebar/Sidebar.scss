@@ -1,47 +1,73 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-.videosHeading {
+.side__section {
+    @include desktop {
+    width: 31.25rem;
+    height: 100%;
+    padding-left: 1.25rem;
+    border-left: $brainflix-border 1px solid;
+}
+}
+.videos__heading {
     font-size: .8125rem;
-    color: #AFAFAF;
+    color: $brainflix-secondary-text;
     font-weight: 700;
     @include tablet {
-        font-size: .875rem;
+        font-size: 1rem;
         margin-top: 1.875rem;
         margin-bottom: 1.875rem;
     }
 }
-.videosContainer {
+.videos__container {
     display: flex;
-    @include tablet {
-        
+    @include desktop {
+        width: 400px;
     }
 }
-.videosTitle {
+.videos__title {
     padding-left: 1rem;
     padding-top: .625rem;
     margin-top: 0rem;
     font-size: .8125rem;
     font-weight: 700;
     @include tablet {
-        font-size: .875rem;
+        padding-top: 0;
+        padding-bottom: .625rem;
+        font-size: 1rem;
+    }
+    @include desktop {
+        width: 200px;
     }
 }
-.videosChannel {
+.videos__channel {
     padding-left: 1rem;
     padding-top: .3125rem;
     font-size: .8125rem;
     @include tablet {
-        font-size: .875rem;
+        font-size: 1rem;
     }
 }
-.videosImg {
-    width: 6.25rem;
-    height: 4.6875rem;
+.videos__img {
+    width: 85px;
+    height: 75px;
     margin-bottom: .625rem;
     border-radius: .25rem;
     @include tablet {
-        width: 7.5rem;
+        width: 150px;
+        height: 90px;
         margin-bottom: 1.5625rem;
+    }
+    @include desktop {
+        width: 1000px;
+        height: 100px
+    }
+}
+.videos__section--b {
+    @include tablet {
+        width: 210px;
+    }
+    @include desktop {
+        width: 25rem;
     }
 }
