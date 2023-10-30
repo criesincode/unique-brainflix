@@ -28,14 +28,6 @@
     }
 }
 
-// .navbar__form {
-//     display: flex;
-//     // flex-direction: column;
-//     @include tablet {
-//         // flex-direction: row;
-//     }
-// }
-
 .navbar__button {
     width: 16.25rem;
     height: 2.5rem;
@@ -96,6 +88,11 @@
     margin-left: 1rem;
     border: .125rem solid $brainflix-border;
     border-radius: .25rem;
+    background-image: url("../../assets/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: (.7rem .7rem);
+    padding-left: 2.1875rem;
     @include tablet {
         margin-top: .9375rem;
         margin-left: 9.375rem;
