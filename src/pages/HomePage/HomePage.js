@@ -47,6 +47,7 @@ const HomePage = () => {
                 </div>
                 <div className="desktopB">
                 <Sidebar
+                    key={currentDetails.id}
                     currentDetails={currentDetails} />
                 </div>    
             </div>

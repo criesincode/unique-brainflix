@@ -1,12 +1,12 @@
 import React from "react";
 import "./Comments.scss";
 
-const Comments = ({ comments }) => {
+const Comments = ({ comments, timestamp }) => {
     let date = new Intl.DateTimeFormat("en-US", {
         month: '2-digit',
         day: '2-digit',
         year: 'numeric'
-    }).format(comments.timestamp)
+    }).format(timestamp)
     return (
         <>
             {Array.isArray(comments) && comments.map(comment => (
