@@ -5,6 +5,12 @@ import likesIcon from "../../assets/icons/likes.svg"
 import "./Main.scss"
 
 const Main = ({ currentDetails }) => {
+    let date = new Intl.DateTimeFormat("en-US", {
+        month: '2-digit',
+        day: '2-digit',
+        year: 'numeric'
+    }).format(currentDetails.timestamp)
+
     return (
         <main className="main">
             <div className="main__title-container">
@@ -12,7 +18,7 @@ const Main = ({ currentDetails }) => {
                 <div className="main__details-container--b">
                     <div className="main__details-section--b">
                         <p className="main__author--b">By {currentDetails.channel}</p>
-                        <p className="main__views--b">{currentDetails.timestamp}</p>
+                        <p className="main__views--b">{date}</p>
                     </div>
                     <div className="main__details-section--c">
                         <p className="main__date--b"><img className="views" src={viewsIcon} />{currentDetails.views}</p>
@@ -26,7 +32,7 @@ const Main = ({ currentDetails }) => {
                     <p className="main__date"><img className="views" src={viewsIcon} />{currentDetails.views}</p>
                 </div>
                 <div className="main__details-section">
-                    <p className="main__views">{currentDetails.timestamp}</p>
+                    <p className="main__views">{date}</p>
                     <p className="main__likes"><img className="likes" src={likesIcon} />{currentDetails.likes}</p>
                 </div>
                 <div className="main__DetailsDescription">

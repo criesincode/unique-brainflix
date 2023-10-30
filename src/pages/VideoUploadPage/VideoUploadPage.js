@@ -21,12 +21,12 @@ const VideoUploadPage = () => {
                     <p className="form__text">TITLE YOUR VIDEO</p>
                     <div className="form__input">
                         <label className="title" htmlFor="title"></label>
-                        <input type="title" name="title" id="title" placeholder="Add a title to your page" />
+                        <input type="text" name="title" id="title" placeholder="Add a title to your page" />
                     </div>
                     <p className="form__text--b">ADD A VIDEO DESCRIPTION</p>
                     <div className="form__input--B">
                         <label className="description" htmlFor="description"></label>
-                        <input type="description" name="description" id="description" placeholder="Add a description to your video" />
+                        <input type="text" name="description" id="description" placeholder="Add a description to your video" />
                         <br />
                         <div className="button__container">
                             <Link to="/">

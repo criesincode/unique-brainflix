@@ -96,7 +96,7 @@
         display: none;
         @include tablet {
             display: flex;
-            color: #AFAFAF;
+            color: $brainflix-secondary-text;
             font-size: .875rem;
             margin-left: 1.875rem;
         }
