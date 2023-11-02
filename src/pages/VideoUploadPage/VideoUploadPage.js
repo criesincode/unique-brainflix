@@ -33,7 +33,7 @@ const VideoUploadPage = () => {
                                 <button className="button" onClick={uploadAlert}>PUBLISH</button>
                             </Link>
                             <Link to="/">
-                            <button className="button__b">CANCEL</button>
+                                <button className="button__b">CANCEL</button>
                             </Link>
                         </div>
                     </div>

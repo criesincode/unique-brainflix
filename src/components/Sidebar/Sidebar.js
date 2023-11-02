@@ -13,7 +13,7 @@ const Sidebar = ({ currentDetails }) => {
   useEffect(() => {
     const getVideoDetails = async () => {
       try {
-        const response = await axios.get(`https://project-2-api.herokuapp.com/videos?api_key=a508756-ed08-4d31-9de7-9a600696cc9e`);
+        const response = await axios.get(`http://localhost:8080/videos`);
         setVideoInfo(response.data);
       } catch (error) {
         console.error(error);
