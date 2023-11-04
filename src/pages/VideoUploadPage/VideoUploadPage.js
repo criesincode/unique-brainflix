@@ -11,8 +11,6 @@ const VideoUploadPage = () => {
     } 
     const handleFormSubmission = (event) => {
         event.preventDefault();  
-        console.log(event.target.title.value)
-        console.log(event.target.description.value)
     const newVideo = {
         title: event.target.title.value,
         description: event.target.description.value,
@@ -52,9 +50,7 @@ const VideoUploadPage = () => {
                         <input type="text" name="description" id="description" placeholder="Add a description to your video" />
                         <br />
                         <div className="button__container">
-                            {/* <Link to="/"> */}
-                                <button className="button" type="submit">PUBLISH</button>
-                            {/* </Link> */}
+                                <button className="button" type="submit" onSubmit={uploadAlert}>PUBLISH</button>
                             <Link to="/">
                                 <button className="button__b">CANCEL</button>
                             </Link>
