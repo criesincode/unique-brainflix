@@ -50,7 +50,9 @@ const VideoUploadPage = () => {
                         <input type="text" name="description" id="description" placeholder="Add a description to your video" />
                         <br />
                         <div className="button__container">
-                                <button className="button" type="submit" onSubmit={uploadAlert}>PUBLISH</button>
+                            <Link to="/">
+                                <button className="button" type="submit" onClick={uploadAlert}>PUBLISH</button>
+                                </Link>
                             <Link to="/">
                                 <button className="button__b">CANCEL</button>
                             </Link>
