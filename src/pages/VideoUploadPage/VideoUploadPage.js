@@ -8,25 +8,25 @@ const VideoUploadPage = () => {
     const navigate = useNavigate()
     const uploadAlert = () => {
         window.alert("Video upload was successful! Return to homepage.")
-    } 
-    const handleFormSubmission = (event) => {
-        event.preventDefault();  
-    const newVideo = {
-        title: event.target.title.value,
-        description: event.target.description.value,
-        image: "Upload-video-preview.jpg"
-    } 
-    const postVideo = async () => {
-        try {
-          const response = await axios.post(`http://localhost:8080/videos`, newVideo);
-          navigate("/")
-        } catch (error) {
-          console.error(error);
-        }
-      };
-      postVideo()   
     }
-    
+    const handleFormSubmission = (event) => {
+        event.preventDefault();
+        const newVideo = {
+            title: event.target.title.value,
+            description: event.target.description.value,
+            image: "Upload-video-preview.jpg"
+        }
+        const postVideo = async () => {
+            try {
+                const response = await axios.post(`http://localhost:8080/videos`, newVideo);
+                navigate("/")
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        postVideo()
+    }
+
     return (
         <>
             <div className="title__container">
@@ -52,7 +52,7 @@ const VideoUploadPage = () => {
                         <div className="button__container">
                             <Link to="/">
                                 <button className="button" type="submit" onClick={uploadAlert}>PUBLISH</button>
-                                </Link>
+                            </Link>
                             <Link to="/">
                                 <button className="button__b">CANCEL</button>
                             </Link>
