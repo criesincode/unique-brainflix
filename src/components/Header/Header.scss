@@ -5,108 +5,119 @@
     @include tablet {
         display: flex;
     }
-}
 
-.navbar__container {
-    display: flex;
-    justify-content: center;
-    @include tablet {
-        flex-direction: row;
+    &__container {
+        display: flex;
+        justify-content: center;
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
-}
 
-.navbar__logo {
-    padding-left: 4.375rem;
-    margin-top: .9375rem;
-    margin-bottom: .625rem;
+    &__logo {
+        padding-left: 4.375rem;
+        margin-top: .9375rem;
+        margin-bottom: .625rem;
 
-    @include tablet {
-        padding-left: 1.5625rem;
-        @include desktop {
-            margin-right: 31.875rem;
+        @include tablet {
+            padding-left: 1.5625rem;
+
+            @include desktop {
+                margin-right: 31.875rem;
+            }
+        }
+    }
+
+    &__button {
+        width: 16.25rem;
+        height: 2.5rem;
+        background-color: $brainflix-primary;
+        color: $brainflix-primary-background;
+        font-weight: 700;
+        border: none;
+        border-radius: .25rem;
+        margin-left: .9375rem;
+        margin-top: .625rem;
+        background-image: url("../../assets/icons/upload.svg");
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        background-position: (.7rem .3rem);
+
+        &:hover {
+            background-color: $brainflix-hover;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__button--b {
+        width: 7.8125rem;
+        height: 2.5rem;
+        background-color: $brainflix-primary;
+        color: $brainflix-primary-background;
+        font-size: .625rem;
+        font-weight: 700;
+        border: none;
+        border-radius: .25rem;
+        background-image: url("../../assets/icons/upload.svg");
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        background-position: (.7rem .3rem);
+        display: none;
+
+        &:hover {
+            background-color: $brainflix-hover;
+        }
+
+        @include tablet {
+            width: 8.125rem;
+            display: flex;
+            margin-left: 1.25rem;
+            margin-top: .9375rem;
+            padding-top: .9375rem;
+            padding-left: 2.5rem;
+            background-size: 1.5rem;
+            background-position: (.7rem .5rem);
+
+            @include desktop {
+                background-size: 1.5rem;
+                background-position: (.7rem .5rem);
+            }
+        }
+    }
+
+    #bflixSearch {
+        width: 13.75rem;
+        height: 2.5rem;
+        margin-bottom: .625rem;
+        margin-left: 1rem;
+        border: .125rem solid $brainflix-border;
+        border-radius: .25rem;
+        background-image: url("../../assets/icons/search.svg");
+        background-repeat: no-repeat;
+        background-size: 1rem;
+        background-position: (.7rem .7rem);
+        padding-left: 2.1875rem;
+
+        @include tablet {
+            margin-top: .9375rem;
+            margin-left: 9.375rem;
+        }
+    }
+
+    &__avi {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 1.5625rem;
+        margin-left: -1.25rem;
+
+        @include tablet {
+            margin-left: 1.5625rem;
+            margin-top: .625rem;
         }
     }
 }
 
-.navbar__button {
-    width: 16.25rem;
-    height: 2.5rem;
-    background-color: $brainflix-primary;
-    color: $brainflix-primary-background;
-    font-weight: 700;
-    border: none;
-    border-radius: .25rem;
-    margin-left: .9375rem;
-    margin-top: .625rem;
-    background-image: url("../../assets/icons/upload.svg");
-    background-repeat: no-repeat;
-    background-size: 2rem;
-    background-position: (.7rem .3rem);
-    @include tablet {
-        display: none;
-    }
-}
-.navbar__button:hover {
-    background-color: $brainflix-hover;
-}
-.navbar__button--b {
-    width: 7.8125rem;
-    height: 2.5rem;
-    background-color: $brainflix-primary;
-    color: $brainflix-primary-background;
-    font-size: .625rem;
-    font-weight: 700;
-    border: none;
-    border-radius: .25rem;
-    background-image: url("../../assets/icons/upload.svg");
-    background-repeat: no-repeat;
-    background-size: 2rem;
-    background-position: (.7rem .3rem);
-    display: none;
-    @include tablet {
-        width: 8.125rem;
-        display: flex;
-        margin-left: 1.25rem;
-        margin-top: .9375rem;
-        padding-top: .9375rem;
-        padding-left: 2.5rem;
-        background-size: 1.5rem;
-        background-position: (.7rem .5rem);
-    }
-    @include desktop {
-        background-size: 1.5rem;
-        background-position: (.7rem .5rem);
-    }
-}
-.navbar__button--b:hover {
-    background-color: $brainflix-hover;
-}
-#bflixSearch {
-    width: 13.75rem;
-    height: 2.5rem;
-    margin-bottom: .625rem;
-    margin-left: 1rem;
-    border: .125rem solid $brainflix-border;
-    border-radius: .25rem;
-    background-image: url("../../assets/icons/search.svg");
-    background-repeat: no-repeat;
-    background-size: 1rem;
-    background-position: (.7rem .7rem);
-    padding-left: 2.1875rem;
-    @include tablet {
-        margin-top: .9375rem;
-        margin-left: 9.375rem;
-    }
-}
-
-.navbar__avi {
-    width: 3.125rem;
-    height: 3.125rem;
-    border-radius: 1.5625rem;
-    margin-left: -1.25rem;
-
-    @include tablet {
-        margin-left: 1.5625rem;
-        margin-top: .625rem;
-     }
-}
