@@ -17,7 +17,7 @@ const HomePage = () => {
       useEffect(() => {
                   const getVideoDetails = async () => {
                     try {
-                      const response = await axios.get(`http://localhost:8080/videos/${defaultVideoID}?api_key=a508756-ed08-4d31-9de7-9a600696cc9e`);
+                      const response = await axios.get(`http://localhost:8080/videos/${defaultVideoID}`);
                       setCurrentDetails(response.data);
                     } catch (error) {
                       console.error(error);
