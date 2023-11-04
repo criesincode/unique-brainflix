@@ -9,57 +9,57 @@
     @include tablet {
         justify-content: flex-start;
     }
-}
 
-.comments__avi {
-    background-color: $brainflix-border;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-top: .625rem;
-    margin-right: .625rem;
+    &__avi {
+        background-color: $brainflix-border;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: .625rem;
+        margin-right: .625rem;
 
-    @include tablet {
-        margin-top: 1.5625rem;
+        @include tablet {
+            margin-top: 1.5625rem;
+        }
     }
-}
 
-.comments__container {
-    width: 16.25rem;
+    &__container {
+        width: 16.25rem;
 
-    @include tablet {
-        width: 41.875rem;
+        @include tablet {
+            width: 41.875rem;
+        }
+
+        @include desktop {
+            width: 43.75rem;
+        }
     }
-    @include desktop {
-        width: 43.75rem;
+
+    &__name {
+        font-size: .8125rem;
+        font-weight: 700;
+
+        @include tablet {
+            margin-top: 1.875rem;
+        }
     }
-}
 
-.comments__name {
-    font-size: .8125rem;
-    font-weight: 700;
+    &__timestamp {
+        font-size: .8125rem;
+        color: $brainflix-secondary-text;
 
-    @include tablet {
-        margin-top: 1.875rem;
+        @include tablet {
+            margin-top: 1.875rem;
+        }
     }
-}
 
-.comments__timestamp {
-    font-size: .8125rem;
-    color: $brainflix-secondary-text;
+    &__comment {
+        margin-top: 0rem;
 
-    @include tablet {
-        margin-top: 1.875rem;
+        @include tablet {
+            width: 40.625rem;
+            margin-bottom: 1.875rem;
+        }
     }
-}
-
-.comments__comment {
-    margin-top: 0rem;
-
-    @include tablet {
-        width: 40.625rem;
-        margin-bottom: 1.875rem;
-    }
-    
 }
 
