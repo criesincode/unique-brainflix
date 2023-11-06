@@ -20,6 +20,7 @@ const VideoUploadPage = () => {
             try {
                 const response = await axios.post(`http://localhost:8080/videos`, newVideo);
                 navigate("/")
+                console.log(response.data);
             } catch (error) {
                 console.error(error);
             }
@@ -50,9 +51,9 @@ const VideoUploadPage = () => {
                         <input type="text" name="description" id="description" placeholder="Add a description to your video" />
                         <br />
                         <div className="button__container">
-                            <Link to="/">
-                                <button className="button" type="submit" onClick={uploadAlert}>PUBLISH</button>
-                            </Link>
+                            
+                                <button className="button" type="submit" onSubmit={uploadAlert}>PUBLISH</button>
+                            
                             <Link to="/">
                                 <button className="button__b">CANCEL</button>
                             </Link>
